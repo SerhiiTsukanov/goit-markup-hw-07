@@ -37,10 +37,9 @@
 
 .list-section-item {
   width: 270px;
-}
-
-.list-section-item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .section-item {

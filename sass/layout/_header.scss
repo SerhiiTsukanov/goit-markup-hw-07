@@ -60,6 +60,10 @@
 .header-connect {
   margin-left: auto;
   display: flex;
+  &-item:hover,
+  &-item:focus {
+    color: var(--accent-color);
+  }
 }
 
 .envelope {
@@ -87,18 +91,18 @@
   text-align: center;
   align-items: center;
   justify-content: center;
+  &:focus,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .link-mail {
   margin-right: 30px;
 }
 
-.link-tel:focus,
-.link-mail:focus,
 .header-link:hover,
-.header-link:focus,
-.header-connect-item:hover,
-.header-connect-item:focus {
+.header-link:focus {
   color: var(--accent-color);
 }
 
