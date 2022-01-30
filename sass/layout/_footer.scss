@@ -39,21 +39,23 @@
   letter-spacing: 0.03em;
   color: var(--first-title-color);
   margin-bottom: 9px;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer-link-tel,
 .footer-link-mail {
   font-size: 14px;
   line-height: 1.71;
-
   letter-spacing: 0.03em;
   margin-bottom: 9px;
   color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-link-tel:hover,
-.footer-link-mail:hover {
-  color: var(--accent-color);
+  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: var(--accent-color);
+  }
 }
 
 /* ----------------------------FOOTER-SOCicon-------------------------- */
