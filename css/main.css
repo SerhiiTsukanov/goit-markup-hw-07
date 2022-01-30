@@ -792,21 +792,12 @@ ul {
   display: flex;
 }
 
-.footer-first {
+.footer__first {
   width: 25%;
 }
 
-.footer-social {
-  width: 25%;
-}
-
-.footer-logo {
-  font-family: Raleway;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+.footer__logo-color {
   color: var(--first-title-color);
-  padding-bottom: 10px;
 }
 
 .address {
@@ -816,39 +807,42 @@ ul {
   padding-top: 20px;
 }
 
-.link-adress {
+.adress__link {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--first-title-color);
   margin-bottom: 9px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-adress:hover, .link-adress:focus {
+.adress__link:hover, .adress__link:focus {
   color: var(--accent-color);
 }
 
-.footer-link-tel,
-.footer-link-mail {
+.footer__link-tel,
+.footer__link-mail {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-bottom: 9px;
   color: rgba(255, 255, 255, 0.6);
-  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-link-tel:hover,
-.footer-link-mail:hover {
+.footer__link-tel:hover, .footer__link-tel:focus,
+.footer__link-mail:hover,
+.footer__link-mail:focus {
   color: var(--accent-color);
 }
 
 /* ----------------------------FOOTER-SOCicon-------------------------- */
-.footer-social {
+.footer__social {
+  width: 25%;
   margin-left: 70px;
 }
 
-.footer-social-title {
+.footer__social-title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -858,21 +852,21 @@ ul {
   padding-bottom: 20px;
 }
 
-.footer-social-list {
+.footer__social-list {
   display: flex;
 }
 
-.footer-social-icon {
+.footer__social-icon {
   width: 20px;
   height: 20px;
   fill: #ffffff;
 }
 
-.footer-social-item + .footer-social-item {
+.footer__social-item + .footer__social-item {
   margin-left: 10px;
 }
 
-.footer-social-link {
+.footer__social-link {
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -880,14 +874,15 @@ ul {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social-link:hover, .footer-social-link:focus {
+.footer__social-link:hover, .footer__social-link:focus {
   background-color: #2196f3;
 }
 
 /* ---------------FOTER-SUBSCRIPTION------------- */
-.footer-subscription {
+.footer__subscription {
   padding-top: 12px;
   margin-left: 93px;
 }
@@ -912,20 +907,21 @@ ul {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: #2f303a;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .email-input:focus, .email-input:hover {
   border-color: var(--accent-color);
+  background-color: #ffffff;
   cursor: pointer;
 }
 
-.footer-subscription-btn {
+.footer__btn {
   margin-left: 12px;
   padding-top: 48px;
 }
 
-.subscription-btn {
+.footer__btn-styles {
   width: 200px;
   height: 50px;
   padding-left: 29px;
@@ -944,7 +940,7 @@ ul {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscription-icon {
+.footer__btn-icon {
   width: 30px;
   height: 30px;
   padding-left: 10px;
