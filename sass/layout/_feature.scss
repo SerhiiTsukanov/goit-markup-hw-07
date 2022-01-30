@@ -4,7 +4,7 @@
   background-color: var(--first-title-color);
 }
 
-.feature__group-listgroup-list {
+.feature__group-list {
   display: flex;
   justify-content: center;
   padding-bottom: 30px;
@@ -31,18 +31,18 @@
   height: 70px;
 }
 
-.list-section {
+.feature__section-list {
   display: flex;
 }
 
-.list-section-item {
+.feature__section-item {
   width: 270px;
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-.section-item {
+.feature__section-h3 {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -51,7 +51,7 @@
   margin-bottom: 10px;
 }
 
-.section-text {
+.feature__section-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
