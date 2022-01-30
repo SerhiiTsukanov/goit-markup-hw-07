@@ -1,20 +1,20 @@
-.section {
+.feature {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--first-title-color);
 }
 
-.group-list {
+.feature__group-listgroup-list {
   display: flex;
   justify-content: center;
   padding-bottom: 30px;
 }
 
-.group-item:not(:last-child) {
+.feature__group-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.group-link {
+.feature__group-link {
   width: 270px;
   height: 120px;
   border: 1px solid #afb1b8;
@@ -26,7 +26,7 @@
   background-color: #f5f4fa;
 }
 
-.group-icon {
+.feature__group-icon {
   width: 70px;
   height: 70px;
 }
